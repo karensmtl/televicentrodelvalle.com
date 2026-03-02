@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televicentro Del Valle</title>
+    
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Iconos (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <img src="LOGOS/logo televicentro fondo oscuro.png" alt="logo televicentro" width="120" height="80">
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#¿QUÉ TE OFRECEMOS?">¿QUÉ TE OFRECEMOS?</a></li>
+                <li><a href="#PRODUCCIÓN AUDIOVISUAL">PRODUCCIÓN AUDIOVISUAL</a></li>
+                <li><a href="#ASESORIA Y VENTA DE EQUIPOS">ASESORIA Y VENTA DE EQUIPOS</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Descubre el Sabor del Mundo</h1>
+            <p>Desde la cocina tradicional de la abuela hasta la alta gastronomía internacional. Todo en un solo lugar.</p>
+            <a href="#recetas" class="btn">Ver Recetas</a>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <div class="categories">
+        <div class="category-grid">
+            <div class="category-card">
+                <i class="fas fa-utensils"></i>
+                <h3>Platos Fuertes</h3>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-ice-cream"></i>
+                <h3>Postres</h3>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-cocktail"></i>
+                <h3>Bebidas</h3>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Vegano</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Recetas (Showcase) -->
+    <section id="recetas" class="recipes">
+        <div class="section-header">
+            <h2>Recetas Destacadas</h2>
+            <div class="divider"></div>
+        </div>
+
+        <!-- Filtros -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="fuerte">Platos Fuertes</button>
+            <button class="filter-btn" data-filter="postre">Postres</button>
+            <button class="filter-btn" data-filter="vegano">Vegano</button>
+        </div>
+
+        <!-- Grid de Tarjetas -->
+        <div class="recipe-grid">
+            <!-- Tarjeta 1 -->
+            <article class="recipe-card" data-category="fuerte">
+                <div class="recipe-img-container">
+                    <img src="https://picsum.photos/seed/steak/400/300" alt="Steak">
+                </div>
+                <div class="recipe-content">
+                    <div class="recipe-meta">
+                        <span><i class="far fa-clock"></i> 45 min</span>
+                        <span><i class="fas fa-fire"></i> 500 kcal</span>
+                    </div>
+                    <h3 class="recipe-title">Steak a la Parrilla</h3>
+                    <p class="recipe-desc">Un corte jugoso con especias secretas y guarnición de vegetales asados.</p>
+                    <div class="card-footer">
+                        <a href="#" class="read-more">Ver Receta <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2 -->
+            <article class="recipe-card" data-category="postre">
+                <div class="recipe-img-container">
+                    <img src="https://picsum.photos/seed/cake/400/300" alt="Cheesecake">
+                </div>
+                <div class="recipe-content">
+                    <div class="recipe-meta">
+                        <span><i class="far fa-clock"></i> 60 min</span>
+                        <span><i class="fas fa-fire"></i> 350 kcal</span>
+                    </div>
+                    <h3 class="recipe-title">Cheesecake de Fresa</h3>
+                    <p class="recipe-desc">Cremoso, refrescante y con la mejor coulis de frutas caseras.</p>
+                    <div class="card-footer">
+                        <a href="#" class="read-more">Ver Receta <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarjeta 3 -->
+            <article class="recipe-card" data-category="vegano">
+                <div class="recipe-img-container">
+                    <img src="https://picsum.photos/seed/salad/400/300" alt="Ensalada">
+                </div>
+                <div class="recipe-content">
+                    <div class="recipe-meta">
+                        <span><i class="far fa-clock"></i> 15 min</span>
+                        <span><i class="fas fa-fire"></i> 150 kcal</span>
+                    </div>
+                    <h3 class="recipe-title">Buddha Bowl Vegano</h3>
+                    <p class="recipe-desc">Lleno de color, nutrientes y el aderezo de tahini más delicioso.</p>
+                    <div class="card-footer">
+                        <a href="#" class="read-more">Ver Receta <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarjeta 4 -->
+            <article class="recipe-card" data-category="fuerte">
+                <div class="recipe-img-container">
+                    <img src="https://picsum.photos/seed/pasta/400/300" alt="Pasta">
+                </div>
+                <div class="recipe-content">
+                    <div class="recipe-meta">
+                        <span><i class="far fa-clock"></i> 30 min</span>
+                        <span><i class="fas fa-fire"></i> 600 kcal</span>
+                    </div>
+                    <h3 class="recipe-title">Pasta Carbonara</h3>
+                    <p class="recipe-desc">La auténtica receta italiana sin crema, solo huevo, queso y panceta.</p>
+                    <div class="card-footer">
+                        <a href="#" class="read-more">Ver Receta <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarjeta 5 -->
+            <article class="recipe-card" data-category="postre">
+                <div class="recipe-img-container">
+                    <img src="https://picsum.photos/seed/choco/400/300" alt="Brownie">
+                </div>
+                <div class="recipe-content">
+                    <div class="recipe-meta">
+                        <span><i class="far fa-clock"></i> 40 min</span>
+                        <span><i class="fas fa-fire"></i> 400 kcal</span>
+                    </div>
+                    <h3 class="recipe-title">Brownie de Chocolate</h3>
+                    <p class="recipe-desc">Intenso, húmedo y con trozos de nueces. Un clásico irresistible.</p>
+                    <div class="card-footer">
+                        <a href="#" class="read-more">Ver Receta <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarjeta 6 -->
+            <article class="recipe-card" data-category="vegano">
+                <div class="recipe-img-container">
+                    <img src="https://picsum.photos/seed/tacos/400/300" alt="Tacos">
+                </div>
+                <div class="recipe-content">
+                    <div class="recipe-meta">
+                        <span><i class="far fa-clock"></i> 25 min</span>
+                        <span><i class="fas fa-fire"></i> 220 kcal</span>
+                    </div>
+                    <h3 class="recipe-title">Tacos de Nopal</h3>
+                    <p class="recipe-desc">La alternativa vegetariana a los tacos tradicionales, llena de sabor.</p>
+                    <div class="card-footer">
+                        <a href="#" class="read-more">Ver Receta <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Únete al Club Sabor 360</h2>
+            <p>Recibe las mejores recetas y trucos de cocina directamente en tu correo.</p>
+            <form class="subscribe-form" id="newsletterForm">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Sabor<span>360</span></div>
+            <p>Cocinando sonrisas alrededor del mundo desde 2023.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Sabor 360. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Element -->
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toast-message">Mensaje enviado</span>
+    </div>
+
+    <!-- Enlace al archivo JS (defer espera a que cargue el HTML) -->
+    <script src="main.js" defer></script>
+</body>
+</html>
