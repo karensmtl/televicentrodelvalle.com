@@ -94,7 +94,7 @@ header {
 /* --- Hero Section --- */
 .hero {
     height: 80vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://picsum.photos/seed/kitchen1/1920/1080');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('img/camara.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
